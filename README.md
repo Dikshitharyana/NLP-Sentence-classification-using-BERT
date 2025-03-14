@@ -6,11 +6,11 @@ This project fine-tunes a BERT-based model for sentence classification using the
 
 Features
 
-Utilizes bert-base-uncased (or another variant) for transfer learning.
+Utilizes bert-base-uncased for transfer learning.
 
 Implements tokenization using Hugging Face's AutoTokenizer.
 
-Fine-tunes the model using PyTorch and the Trainer API.
+Fine-tunes the model using a custom PyTorch training loop instead of the Trainer API.
 
 Supports evaluation metrics such as accuracy, F1-score, and Matthews Correlation Coefficient (MCC).
 
@@ -31,7 +31,7 @@ Dataset
 
 This project uses the CoLA dataset, which is part of the GLUE benchmark. 
 
-🚀 Training the Model
+Training the Model
 
 The model is trained using the following parameters:
 
@@ -45,11 +45,11 @@ Optimizer: AdamW
 
 These parameters are set in the Jupyter Notebook file (Sentence_classification_by_finetuning_BERT.ipynb). Modify them as needed to experiment with different hyperparameters.
 
-📊 Evaluation
+Evaluation
 
 To evaluate the model on the test dataset, run the evaluation cells in the notebook. This will generate metrics such as Accuracy,and MCC score.
 
-📈 Results
+Results
 
 The model achieves the following performance on the CoLA test dataset:
 
@@ -59,11 +59,7 @@ Validation Loss: 0.57
 
 MCC Score: 0.54
 
-🔄 Inference
-
-You can use the trained model to classify new sentences by running the inference section in the notebook.
-
-📌 Future Improvements
+Future Improvements
 
 Experiment with different BERT variants like distilBERT or RoBERTa.
 
@@ -71,11 +67,11 @@ Perform hyperparameter tuning using grid search or Bayesian optimization.
 
 Implement data augmentation techniques to improve generalization.
 
-📝 License
+License
 
 This project is open-source and available under the MIT License.
 
-🙌 Acknowledgments
+Acknowledgments
 
 Hugging Face for the transformers library
 
@@ -83,6 +79,6 @@ PyTorch for deep learning framework
 
 The GLUE Benchmark for providing the CoLA dataset
 
-📬 Contact
+Contact
 
 For queries, feel free to reach out via email or open an issue on GitHub!
